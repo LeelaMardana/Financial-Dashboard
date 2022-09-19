@@ -21,14 +21,30 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header-wrapper">
-          <div class="hero">
-            <h1 class="hero__title">Weekly sumup</h1>
-            <p class="hero__text">
-              Get summary of your weekly online transactions here.
-            </p>
-            <button class="hero__btn">Sign Up</button>
-          </div>
+        <div class="header__main">
+          <h1 class="header__title">Weekly sumup</h1>
+          <p class="header__text">
+            Get summary of your weekly online transactions here.
+          </p>
+        </div>
+        <div class="user-nav">
+          <a class="user-nav__item user-nav__messages" href="#">
+            <img src="./img/header/messages.svg" alt="messages" />
+          </a>
+          <a class="user-nav__item user-nav__notification" href="#">
+            <img src="./img/header/notification.svg" alt="notification" />
+            <span class="user-nav__unread"></span>
+          </a>
+
+          <a href="#" class="user-nav__profile">
+            <div class="user-nav__profile-img">
+              <img src="./img/header/profile.svg" alt="" />
+            </div>
+            <div class="user-nav__profile-box">
+              <span class="user-nav__profile-name">Andrew</span>
+              <span class="user-nav__profile-about">Admin account</span>
+            </div>
+          </a>
         </div>
       </header>
       <div class="sidebar">
@@ -250,11 +266,6 @@
           </button>
         </div>
       </div>
-      <div class="icon">
-        <div></div>
-      </div>
-
-      <div></div>
     </div>
   </body>
 </html>

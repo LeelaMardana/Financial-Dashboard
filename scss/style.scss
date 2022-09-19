@@ -4,30 +4,30 @@
 @import 'navbar';
 
 body {
-  background-color: var(--white);
-  padding: 30px;
+  background-color: #f0f0f0;
+  padding: 20px;
 }
 .wrapper {
-  box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.08),
-    0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.08),
-    0px 0px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.04),
+    0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04),
+    0px 0px 1px rgba(0, 0, 0, 0.04);
   border-radius: 59px;
   min-height: (calc(100vh - 60px));
   padding-left: 297px;
   position: relative;
-  background-color: rgb(99, 136, 248);
+  background-color: var(--white);
   overflow: hidden;
 }
 
 .sidebar {
   max-width: 250px;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--white);
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
-  border-right: 2px solid #000;
+  border-right: 2px solid #ebebeb;
   padding: 55px 45px 32px 40px;
   display: flex;
   justify-content: space-between;
@@ -106,6 +106,76 @@ body {
       .menu__item-icon {
         color: var(--menu-hover);
       }
+    }
+  }
+}
+
+.header {
+  padding-top: 43px;
+  padding-right: 47px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__title {
+    font-family: 'Suprema';
+    font-weight: 600;
+    font-size: 44px;
+    margin-bottom: 3px;
+    line-height: 53px;
+    color: #404040;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #aeaeae;
+    font-family: 'Suprema';
+  }
+  & .user-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    &__item {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+    }
+    &__notification,
+    &__messages {
+      position: relative;
+    }
+    &__unread {
+      position: absolute;
+      content: '';
+      width: 8px;
+      height: 8px;
+      background-color: #bb4430;
+      right: 0px;
+      top: 0;
+      border-radius: 50%;
+    }
+    &__profile {
+      display: flex;
+      gap: 9px;
+    }
+    &__profile-box {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Suprema';
+      font-size: 14px;
+      line-height: 17px;
+    }
+    &__profile-name {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      color: #404040;
+    }
+    &__profile-about {
+      font-weight: 400;
+      color: #aeaeae;
     }
   }
 }
