@@ -11,7 +11,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
-
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
@@ -271,9 +270,87 @@
           <h2 class="cards__title title">Cards</h2>
           <div class="cards__items">
             <div class="cards__content">
-              <div class="cards__card">
-                <img class="cards__card-img" src="./img/card.png" alt="card" />
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="cards__card">
+                      <span class="cards__line"></span>
+                      <div class="card-inner">
+                        <div class="card-info">
+                          <span class="card-info__name">cloudcash</span>
+                          <span class="card-info__type">PREMIUM ACCOUNT</span>
+                        </div>
+                        <div class="card-number">
+                          <span>5789</span>
+                          <span>* * * *</span>
+                          <span>* * * *</span>
+                          <span>2847</span>
+                        </div>
+                        <div class="card-addition">
+                          <span class="card-addition__item">Card holder</span>
+                          <span class="card-addition__item">Expire date</span>
+                          <span class="card-addition__item">Mike Smith</span>
+                          <span class="card-addition__item">06/21</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="cards__card">
+                      <span class="cards__line"></span>
+                      <div class="card-inner">
+                        <div class="card-info">
+                          <span class="card-info__name">cloudcash</span>
+                          <span class="card-info__type">PREMIUM ACCOUNT</span>
+                        </div>
+                        <div class="card-number">
+                          <span>5789</span>
+                          <span>* * * *</span>
+                          <span>* * * *</span>
+                          <span>2847</span>
+                        </div>
+                        <div class="card-addition">
+                          <span class="card-addition__item">Card holder</span>
+                          <span class="card-addition__item">Expire date</span>
+                          <span class="card-addition__item">Mike Smith</span>
+                          <span class="card-addition__item">06/21</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="cards__card">
+                      <span class="cards__line"></span>
+                      <div class="card-inner">
+                        <div class="card-info">
+                          <span class="card-info__name">cloudcash</span>
+                          <span class="card-info__type">PREMIUM ACCOUNT</span>
+                        </div>
+                        <div class="card-number">
+                          <span>5789</span>
+                          <span>* * * *</span>
+                          <span>* * * *</span>
+                          <span>2847</span>
+                        </div>
+                        <div class="card-addition">
+                          <span class="card-addition__item">Card holder</span>
+                          <span class="card-addition__item">Expire date</span>
+                          <span class="card-addition__item">Mike Smith</span>
+                          <span class="card-addition__item">06/21</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
               </div>
+
               <div class="cards__balance">
                 <input
                   class="cards__balance-input"
@@ -323,7 +400,7 @@
             </button>
           </div>
           <div class="goals__items">
-            <div class="goals__item">
+            <a href="#" class="goals__item">
               <div class="goals__item-cost">
                 <span class="goals__item-price">$550</span>
                 <span class="goals__item-date">12/20/20</span>
@@ -334,8 +411,8 @@
                 </div>
                 <span class="goals__item-title">Holidays</span>
               </div>
-            </div>
-            <div class="goals__item">
+            </a>
+            <a href="#" class="goals__item">
               <div class="goals__item-cost">
                 <span class="goals__item-price">$200</span>
                 <span class="goals__item-date">12/20/20</span>
@@ -346,8 +423,8 @@
                 </div>
                 <span class="goals__item-title">Renovation</span>
               </div>
-            </div>
-            <div class="goals__item">
+            </a>
+            <a href="#" class="goals__item">
               <div class="goals__item-cost">
                 <span class="goals__item-price">$820</span>
                 <span class="goals__item-date">12/20/20</span>
@@ -358,7 +435,7 @@
                 </div>
                 <span class="goals__item-title">Xbox</span>
               </div>
-            </div>
+            </a>
           </div>
         </section>
         <section class="statistics">
@@ -366,7 +443,7 @@
           <div class="statistics__items">
             <div class="statistics__item">
               <div class="statistics__img">
-                <img src="./img/statistics/shopping.svg" alt="shoppping" />
+                <img src="./img/statistics/shopping.svg" alt="shopping" />
               </div>
               <div class="statistics__content">
                 <input
@@ -378,7 +455,7 @@
                   oninput="52"
                 />
                 <span class="statistics__content-scale"></span>
-                <span class="statistics__content-text">Shoppping</span>
+                <span class="statistics__content-text">Shopping</span>
               </div>
               <span class="statistics__num"
                 ><output id="shoppping">52</output>%</span
@@ -520,6 +597,7 @@
             </ul>
           </div>
         </section>
+
         <div class="box">
           <section class="new-transaction">
             <h2 class="new-transaction__title title">New transaction</h2>

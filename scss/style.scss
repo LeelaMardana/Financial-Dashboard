@@ -7,7 +7,10 @@ body {
   padding: 20px;
 }
 .wrapper {
+  max-width: 2500px;
+  margin: auto;
   display: flex;
+  justify-content: center;
   box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.04),
     0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04),
     0px 0px 1px rgba(0, 0, 0, 0.04);
@@ -105,12 +108,13 @@ body {
 }
 
 .header {
+  grid-column: span 2;
   width: 100%;
   height: 79px;
   display: flex;
   justify-content: space-between;
   padding-right: 22px;
-  margin-bottom: 42px;
+  margin-bottom: 10px;
   align-items: center;
   &__title {
     font-family: 'Suprema';
@@ -178,6 +182,12 @@ body {
 
 .content {
   padding: 43px 25px 32px 45px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 597px 507px;
+  grid-template-rows: 79px;
+  column-gap: 30px;
+  row-gap: 30px;
   width: 100%;
 }
 
@@ -190,6 +200,7 @@ body {
 }
 
 .cards {
+  grid-row: span 2;
   max-width: 597px;
   max-height: 363px;
   padding: 14px 28px 32px 26px;
@@ -207,7 +218,19 @@ body {
   &__content {
     padding-left: 10px;
     max-width: 395px;
+    position: relative;
+    &::after {
+      content: '';
+      width: 255px;
+      height: 166px;
+      bottom: 47px;
+      right: -47px;
+      position: absolute;
+      background-image: url(./../img/card.svg);
+      background-repeat: no-repeat;
+    }
   }
+
   &__about {
     max-width: 140px;
     width: 100%;
@@ -303,14 +326,26 @@ body {
     }
   }
   &__card {
-    margin-bottom: 31px;
-    padding-right: 40px;
-    border-right: 1px solid #e8e8e8;
+    position: relative;
+    user-select: none;
+    background: linear-gradient(180deg, #197bbd 0%, #3391d0 100%);
+    border-radius: 26px;
+    width: 321px;
+    height: 207px;
     &-img {
       filter: drop-shadow(0px 16px 24px rgba(0, 0, 0, 0.06))
         drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.04))
         drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.04));
     }
+  }
+  &__line {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 200px;
+    top: 0;
+    right: -40px;
+    background-color: #e8e8e8;
   }
   &__balance {
     max-width: 320px;
@@ -347,9 +382,75 @@ body {
     }
   }
 }
+.card {
+  &-inner {
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    color: #ffffff;
+  }
+  &-info {
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 46px;
+    &__name {
+      font-family: 'Quicksand';
+      font-size: 16.7475px;
+      line-height: 21px;
+    }
+    &__type {
+      font-family: 'Lato';
+      font-size: 8.11292px;
+      line-height: 10px;
+      color: rgba(255, 255, 255, 0.39);
+    }
+  }
+  &-number {
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 21.4918px;
+    line-height: 27px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-end;
+    margin-bottom: 31px;
+    span {
+      letter-spacing: 0.4px;
+      &:nth-child(2) {
+        line-height: 20px;
+        padding-right: 8px;
+      }
+      &:nth-child(3) {
+        line-height: 20px;
+      }
+    }
+  }
+  &-addition {
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 7.17776px;
+    line-height: 9px;
+    display: grid;
+    grid-template-columns: 110px 110px;
+    row-gap: 6px;
+    span:nth-child(3),
+    span:nth-child(4) {
+      font-size: 12.6167px;
+      line-height: 15px;
+    }
+  }
+}
+
+.swiper {
+  margin-bottom: 31px;
+  width: 321px;
+  overflow: hidden;
+}
 
 .goals {
   max-width: 507px;
+  padding-top: 14px;
   &-wrap {
     display: flex;
     gap: 6px;
@@ -367,6 +468,7 @@ body {
     gap: 10px;
   }
   &__item {
+    background-color: #fff;
     box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06),
       0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
     border-radius: 28px;
@@ -377,6 +479,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: background-color ease-in-out 0.2s;
+    &:hover {
+      background-color: var(--hover);
+    }
     &-cost {
       display: flex;
       flex-direction: column;
@@ -418,6 +524,7 @@ body {
 
 .statistics {
   max-width: 507px;
+  grid-row: span 2;
   &__title {
     margin-bottom: 13px;
   }
@@ -515,8 +622,9 @@ body {
 }
 
 .transaction-history {
+  grid-row: span 2;
   padding: 19px 28px 27px 25px;
-  max-width: 596px;
+  max-width: 597px;
   width: 100%;
   box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04),
     0px 0px 1px rgba(0, 0, 0, 0.04);
