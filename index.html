@@ -271,12 +271,10 @@
           <div class="cards__items">
             <div class="cards__content">
               <div class="swiper">
-                <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                  <!-- Slides -->
+                  <span class="cards__line"></span>
                   <div class="swiper-slide">
-                    <div class="cards__card">
-                      <span class="cards__line"></span>
+                    <div class="cards__card premium">
                       <div class="card-inner">
                         <div class="card-info">
                           <span class="card-info__name">cloudcash</span>
@@ -298,59 +296,57 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="cards__card">
-                      <span class="cards__line"></span>
+                    <div class="cards__card platinum">
                       <div class="card-inner">
                         <div class="card-info">
                           <span class="card-info__name">cloudcash</span>
-                          <span class="card-info__type">PREMIUM ACCOUNT</span>
+                          <span class="card-info__type">PLATINUM ACCOUNT</span>
                         </div>
                         <div class="card-number">
-                          <span>5789</span>
+                          <span>1234</span>
                           <span>* * * *</span>
                           <span>* * * *</span>
-                          <span>2847</span>
+                          <span>5678</span>
                         </div>
                         <div class="card-addition">
                           <span class="card-addition__item">Card holder</span>
                           <span class="card-addition__item">Expire date</span>
-                          <span class="card-addition__item">Mike Smith</span>
-                          <span class="card-addition__item">06/21</span>
+                          <span class="card-addition__item">Kile Stone</span>
+                          <span class="card-addition__item">07/22</span>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="cards__card">
-                      <span class="cards__line"></span>
+                    <div class="cards__card classic">
                       <div class="card-inner">
                         <div class="card-info">
                           <span class="card-info__name">cloudcash</span>
-                          <span class="card-info__type">PREMIUM ACCOUNT</span>
+                          <span class="card-info__type">CLASSIC ACCOUNT</span>
                         </div>
                         <div class="card-number">
-                          <span>5789</span>
+                          <span>9876</span>
                           <span>* * * *</span>
                           <span>* * * *</span>
-                          <span>2847</span>
+                          <span>5432</span>
                         </div>
                         <div class="card-addition">
                           <span class="card-addition__item">Card holder</span>
                           <span class="card-addition__item">Expire date</span>
-                          <span class="card-addition__item">Mike Smith</span>
-                          <span class="card-addition__item">06/21</span>
+                          <span class="card-addition__item">Stan Marsh</span>
+                          <span class="card-addition__item">02/22</span>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
               </div>
-
+              <div class="swiper-btn swiper-btn-prev">
+                <img src="./img/left-arrow.svg" alt="left arrow" />
+              </div>
+              <div class="swiper-btn swiper-btn-next">
+                <img src="./img/right-arrow.svg" alt="right-arrow" />
+              </div>
               <div class="cards__balance">
                 <input
                   class="cards__balance-input"
@@ -399,43 +395,68 @@
               <img src="./img/goals/plus.svg" alt="add" />
             </button>
           </div>
-          <div class="goals__items">
-            <a href="#" class="goals__item">
-              <div class="goals__item-cost">
-                <span class="goals__item-price">$550</span>
-                <span class="goals__item-date">12/20/20</span>
-              </div>
-              <div class="goals__item-about">
-                <div class="goals__item-img">
-                  <img src="./img/goals/holidays.svg" alt="holidays" />
+          <div class="swiper-goals">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="goals__wrapper">
+                  <a href="#" class="goals__item">
+                    <div class="goals__hover"></div>
+                    <div class="goals__item-cost">
+                      <span class="goals__item-price">$550</span>
+                      <span class="goals__item-date">12/20/20</span>
+                    </div>
+                    <div class="goals__item-about">
+                      <div class="goals__item-img">
+                        <img src="./img/goals/holidays.svg" alt="holidays" />
+                      </div>
+                      <span class="goals__item-title">Holidays</span>
+                    </div>
+                  </a>
                 </div>
-                <span class="goals__item-title">Holidays</span>
               </div>
-            </a>
-            <a href="#" class="goals__item">
-              <div class="goals__item-cost">
-                <span class="goals__item-price">$200</span>
-                <span class="goals__item-date">12/20/20</span>
-              </div>
-              <div class="goals__item-about">
-                <div class="goals__item-img">
-                  <img src="./img/goals/renovation.svg" alt="Renovation" />
+              <div class="swiper-slide">
+                <div class="goals__wrapper">
+                  <a href="#" class="goals__item">
+                    <div class="goals__hover"></div>
+                    <div class="goals__item-cost">
+                      <span class="goals__item-price">$200</span>
+                      <span class="goals__item-date">12/20/20</span>
+                    </div>
+                    <div class="goals__item-about">
+                      <div class="goals__item-img">
+                        <img
+                          src="./img/goals/renovation.svg"
+                          alt="Renovation"
+                        />
+                      </div>
+                      <span class="goals__item-title">Renovation</span>
+                    </div>
+                  </a>
                 </div>
-                <span class="goals__item-title">Renovation</span>
               </div>
-            </a>
-            <a href="#" class="goals__item">
-              <div class="goals__item-cost">
-                <span class="goals__item-price">$820</span>
-                <span class="goals__item-date">12/20/20</span>
-              </div>
-              <div class="goals__item-about">
-                <div class="goals__item-img">
-                  <img src="./img/goals/xbox.svg" alt="xbox" />
+              <div class="swiper-slide">
+                <div class="goals__wrapper">
+                  <a href="#" class="goals__item">
+                    <div class="goals__hover"></div>
+                    <div class="goals__item-cost">
+                      <span class="goals__item-price">$820</span>
+                      <span class="goals__item-date">12/20/20</span>
+                    </div>
+                    <div class="goals__item-about">
+                      <div class="goals__item-img">
+                        <img src="./img/goals/xbox.svg" alt="xbox" />
+                      </div>
+                      <span class="goals__item-title">Xbox</span>
+                    </div>
+                  </a>
                 </div>
-                <span class="goals__item-title">Xbox</span>
               </div>
-            </a>
+            </div>
+            <div class="swiper-goals-btn swiper-goals-btn-next">
+              <img src="./img/right-arrow.svg" alt="right-arrow" />
+            </div>
           </div>
         </section>
         <section class="statistics">
