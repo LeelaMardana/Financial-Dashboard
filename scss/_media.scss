@@ -1,3 +1,87 @@
+@media (max-width: 2499px) {
+  .wrapper {
+    min-height: (calc(100vh - 40px));
+  }
+}
+@media (max-width: 1530px) {
+  .title {
+    text-align: center;
+  }
+  .wrapper {
+    min-height: 100vh;
+    justify-content: space-around;
+  }
+  .content {
+    padding: 43px 15px 32px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1000px;
+  }
+  .cards {
+    max-width: 100%;
+    &__items {
+      justify-content: space-around;
+    }
+    &__about {
+      max-width: 300px;
+    }
+    &__line {
+      display: none;
+    }
+  }
+  .goals {
+    max-width: 100%;
+    margin-left: 0;
+    &-wrap {
+      justify-content: center;
+    }
+    &__wrapper {
+      max-width: 90%;
+      width: 100%;
+    }
+    &__item {
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      &-about {
+        align-items: center;
+      }
+    }
+  }
+  .swiper-goals {
+    width: 100%;
+    &-btn-next {
+      top: 27px;
+      right: 0;
+      left: calc(50% + 60px);
+    }
+  }
+  .statistics {
+    max-width: 100%;
+    &__content {
+      max-width: 100%;
+    }
+  }
+  .transaction-history {
+    align-self: center;
+  }
+  .box {
+    width: 100%;
+    max-width: 100%;
+    gap: 30px;
+  }
+  .new-transaction {
+    max-width: 100%;
+    &__title {
+      text-align: left;
+    }
+  }
+  .loan {
+    max-width: 158px;
+    width: 100%;
+  }
+}
 @media (max-width: 1200px) {
 }
 @media (max-width: 992px) {
