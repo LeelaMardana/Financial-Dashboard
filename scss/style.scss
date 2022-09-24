@@ -1,6 +1,7 @@
 @import 'reset';
 @import 'fonts';
 @import 'vars';
+@import 'navbar';
 
 body {
   background-color: #f0f0f0;
@@ -15,7 +16,6 @@ body {
     0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04),
     0px 0px 1px rgba(0, 0, 0, 0.04);
   border-radius: 59px;
-
   position: relative;
   background-color: var(--white);
   overflow: hidden;
@@ -116,6 +116,10 @@ body {
   padding-right: 22px;
   margin-bottom: 10px;
   align-items: center;
+  &__phone {
+    display: none;
+  }
+
   &__title {
     font-family: 'Suprema';
     font-weight: 600;

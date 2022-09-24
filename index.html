@@ -240,6 +240,36 @@
       </div>
       <div class="content">
         <header class="header">
+          <div class="header__phone">
+            <div class="menu-btn">
+              <div class="burger">
+                <span></span>
+              </div>
+            </div>
+            <a class="logo" href="#">
+              <img class="logo__img" src="./img/logo.svg" alt="logo" />
+              <p class="logo__text">cloudcash</p>
+            </a>
+            <div class="user-nav">
+              <a class="user-nav__item user-nav__messages" href="#">
+                <img src="./img/header/messages.svg" alt="messages" />
+              </a>
+              <a class="user-nav__item user-nav__notification" href="#">
+                <img src="./img/header/notification.svg" alt="notification" />
+                <span class="user-nav__unread"></span>
+              </a>
+
+              <a href="#" class="user-nav__profile">
+                <div class="user-nav__profile-img">
+                  <img src="./img/header/profile.svg" alt="" />
+                </div>
+                <div class="user-nav__profile-box">
+                  <span class="user-nav__profile-name">Andrew</span>
+                  <span class="user-nav__profile-about">Admin account</span>
+                </div>
+              </a>
+            </div>
+          </div>
           <div class="header__main">
             <h1 class="header__title">Weekly sumup</h1>
             <p class="header__text">
@@ -528,10 +558,12 @@
           <h2 class="transaction-history__title title">Transaction history</h2>
           <div class="transaction-history__content">
             <div class="transaction-history__paragraphs">
-              <span class="transaction-history__paragraph">Reciever</span>
-              <span class="transaction-history__paragraph">Type</span>
-              <span class="transaction-history__paragraph">Date</span>
-              <span class="transaction-history__paragraph">Amount</span>
+              <span class="transaction-history__paragraph reciever"
+                >Reciever</span
+              >
+              <span class="transaction-history__paragraph type">Type</span>
+              <span class="transaction-history__paragraph date">Date</span>
+              <span class="transaction-history__paragraph amount">Amount</span>
             </div>
             <ul class="transaction-history__items">
               <li class="transaction-history__item">

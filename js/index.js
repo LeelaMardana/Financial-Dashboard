@@ -28,3 +28,31 @@ const swiper2 = new Swiper('.swiper-goals', {
     prevEl: '.swiper-goals-btn-prev',
   },
 });
+
+//Навбар
+const navbar = (function () {
+  const btn = document.querySelector('.burger span');
+  const menu = document.querySelector('.sidebar');
+  const body = document.querySelector('body');
+
+  // если ширина экрана >= 992 тогда выполнить код
+  const width = document.documentElement.clientWidth;
+  if (width >= 992) return;
+
+  body.addEventListener('click', e => {
+    // Код идет дальше только если есть актив и клик был на бургер
+    if (!btn.classList.contains('active') && !e.target.closest('.burger')) {
+      return;
+    }
+
+    // 1 открытие или закрытие по нажатию // 2 закрытие по клику на элементы // 3 закрытие по клику запределы
+    if (
+      e.target.closest('.burger') ||
+      e.target.closest('a') ||
+      !e.target.closest('.sidebar')
+    ) {
+      btn.classList.toggle('active');
+      menu.classList.toggle('animate');
+    }
+  });
+})();
