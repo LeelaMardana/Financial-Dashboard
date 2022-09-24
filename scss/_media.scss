@@ -181,7 +181,80 @@
     padding-left: 15px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 620px) {
+  .header__title {
+    font-size: 34px;
+  }
+  .header__phone {
+    .user-nav {
+      &__item,
+      &__profile-box {
+        display: none;
+      }
+    }
+  }
+
+  .cards {
+    max-height: inherit;
+    &__items {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__about {
+      max-width: 100%;
+    }
+    &__about-item {
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-direction: row-reverse;
+      .current-num,
+      .income-num,
+      .outcome-num {
+        font-size: 25px;
+        line-height: 32px;
+      }
+    }
+  }
+  .transaction-history__paragraphs,
+  .transaction-history__link {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .transaction-history__date,
+  .date {
+    display: none;
+  }
+  .box {
+    flex-direction: column;
+  }
+  .loan {
+    max-width: 100%;
+    height: 50px;
+    &__link {
+      justify-content: center;
+      align-items: center;
+    }
+    &__link::before {
+      display: none;
+    }
+  }
 }
 @media (max-width: 480px) {
+  .swiper-btn {
+    display: none;
+  }
+  .cards,
+  .transaction-history,
+  .new-transaction {
+    padding: 0;
+    box-shadow: none;
+  }
+  .new-transaction__box {
+    justify-content: space-evenly;
+  }
+  .new-transaction__add-text {
+    display: none;
+  }
 }

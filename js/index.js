@@ -27,6 +27,18 @@ const swiper2 = new Swiper('.swiper-goals', {
     nextEl: '.swiper-goals-btn-next',
     prevEl: '.swiper-goals-btn-prev',
   },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    450: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+  },
 });
 
 //Навбар
